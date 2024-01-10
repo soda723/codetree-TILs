@@ -1,8 +1,11 @@
-def sol(lv):
-    if lv == 2 or lv == 3 : return 1
-    elif lv == 1 : return 0
-    else:
-        return sol(lv-2) + sol(lv-3)
-
 n = int(input())
-print(sol(n)%10007)
+temp = [0]*(n+1)
+temp[0] = 0
+temp[1] = 0
+temp[2] = 1
+temp[3] = 1
+for i in range (4, n+1):
+    temp[i] = temp[i-2] + temp[i-3]
+
+#print(temp[0:10])
+print(temp[n]%10007)
