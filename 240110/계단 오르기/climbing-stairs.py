@@ -1,5 +1,5 @@
 n = int(input())
-temp = [0]*(n+1)
+temp = [0]*(n+2)
 temp[0] = 0
 temp[1] = 0
 temp[2] = 1
