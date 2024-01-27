@@ -7,7 +7,7 @@ for a in arr:
     arrplus.append(a+1)
 
 combi = combinations(range(N), L)
-answer = -1
+answer = 1
 for c in combi:
     newarr = []
     for i in range(N) :
@@ -24,7 +24,7 @@ for c in combi:
 
     #print(counts)
 
-    mini_answer = -1
+    mini_answer = 1
     for k, v in counts.items():
         if k <= v : 
             mini_answer = max(mini_answer, k)
