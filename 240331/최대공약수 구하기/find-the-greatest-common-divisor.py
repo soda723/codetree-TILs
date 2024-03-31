@@ -1,5 +1,5 @@
 def maxinja(n, m):
-    answer = False
+    answer = 1
     for i in range(n, 1, -1):
         if n % i == 0 :
             if m % i == 0 :
